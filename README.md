@@ -1,4 +1,4 @@
-# Image Captioner
+# Image Captioner (MacOS)
 A minimal, fast GUI to caption dataset images for LoRA/SDXL training. Export renames images to sequential numbers and writes matching `.txt` files with your prompts.
 
 Made by [DualChimerra](https://github.com/DualChimerra).
