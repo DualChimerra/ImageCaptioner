@@ -1,4 +1,4 @@
-**Custom Non-Commercial License (CNCL)**
+# Custom Non-Commercial License (CNCL)
 
 `Copyright (c) 2025 DualChimerra`
 
