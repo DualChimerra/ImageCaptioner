@@ -51,11 +51,14 @@ The installer will be created in the `dist/` folder (electron-builder).
 - If “Export visible only” is enabled, export order follows the current list order (after filtering/sorting).
 
 ## Roadmap ideas
+- Windows support
 - Drag & drop import
 - CSV/JSON import/export of captions
 - Keyboard shortcuts (navigation, mark done, export)
 - Autosave session and restore on launch
 - Tag presets and autocomplete for common tokens
+
+Tested only on `macOS Sequoia 15.5`
 
 ## License
 Custom Non-Commercial License (CNCL)
