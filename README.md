@@ -1,6 +1,6 @@
 # Image Captioner (MacOS)
 A focused GUI to caption dataset images for LoRA/SDXL training. It streamlines annotation, guarantees consistent file naming, and exports images and captions in the exact format most LoRA pipelines expect: sequentially numbered images plus same‑named `.txt` files with prompts.
-
+![Screenshot](https://github.com/DualChimerra/ImageCaptioner/blob/main/assets/scr.png)
 Tested only on `macOS Sequoia 15.5`
 
 ## Why this speeds up LoRA training
