@@ -21,7 +21,7 @@ Supported image formats: `png`, `jpg`, `jpeg`, `webp`, `bmp`, `tiff`, `tif`, `he
 2) In Terminal:
 
 ```bash
-cd /Users/maiyacherriez/image-caption
+cd /Users/user/image-caption
 npm install
 npm run start
 ```
