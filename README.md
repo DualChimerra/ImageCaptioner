@@ -1,54 +1,57 @@
 # Image Captioner (MacOS)
-A minimal, fast GUI to caption dataset images for LoRA/SDXL training. Export renames images to sequential numbers and writes matching `.txt` files with your prompts.
+A focused GUI to caption dataset images for LoRA/SDXL training. It streamlines annotation, guarantees consistent file naming, and exports images and captions in the exact format most LoRA pipelines expect: sequentially numbered images plus same‑named `.txt` files with prompts.
 
 Tested only on `macOS Sequoia 15.5`
 
-## Highlights
+## Why this speeds up LoRA training
+- **Zero manual file management**: the app renames images to `1..N` and writes `1..N.txt` automatically. No more hand‑renaming or misaligned captions.
+- **Fast per‑image editing**: thumbnail + caption field per image, with a clear Done/Not done status. You always know progress.
+- **Batch operations**: drag to select a group, then bulk Delete or Mark as done to clean or finalize quickly.
+- **Filter/sort and export only what you need**: focus on items without captions or not done; export only the visible subset to iterate in small batches.
+- **Fewer mistakes**: the tool guarantees matching names for images and captions, consistent encoding (UTF‑8), and preserves original extensions.
+- **LoRA‑friendly conventions**: numbering and sidecar `.txt` files align with common SDXL LoRA scripts, so training can start right away.
+
+## Features
 - Load an unlimited number of images
 - Per‑image caption input with status: Done / Not done
-- Delete image or bulk delete/mark as done with multi‑selection (drag to select)
-- Lightbox preview (click thumbnail, close on click or ESC)
-- Filters and sort by caption presence and Done status
-- Option “Export visible only” respects current filters and sorting
+- Delete per image + bulk delete or bulk mark done (drag‑select)
+- Lightbox preview (click thumbnail; close on click outside or ESC)
+- Filters and sorting by caption presence and status
+- “Export visible only” respects current filters/sorting
 - Choose Start Index; numbering is continuous (1..N)
-- RU/EN language switch
-- Modern, minimalist dark UI (Tailwind)
+- Language switch: EN / RU
+- Minimalist, modern dark UI
 
 Supported image formats: `png`, `jpg`, `jpeg`, `webp`, `bmp`, `tiff`, `tif`, `heic`, `heif`.
 
-## Quick start (macOS)
-1) Install Node.js LTS from `https://nodejs.org`
-2) In Terminal:
+## Installation (macOS)
+Prerequisites: Node.js LTS (18+ recommended). Install from `https://nodejs.org`.
 
+1) Download or clone this repository to any folder on your Mac, for example `~/image-caption`.
+2) Open Terminal and run:
 ```bash
-cd /Users/user/image-caption
+cd ~/image-caption
 npm install
 npm run start
 ```
-
 This launches the app.
 
-## Build a distributable (DMG)
+To build a DMG installer:
 ```bash
 npm run dist
 ```
-The installer will be created in the `dist/` folder (electron-builder).
+The installer will be generated in the `dist/` folder (electron‑builder).
 
 ## Usage
-1. Click “Load images” and select files.
+1. Click “Load images” and choose your dataset images.
 2. Click “Choose folder” and set the output directory.
-3. Optionally set “Start index”.
-4. Enter a caption for each image; toggle status Done/Not done.
-5. To select multiple: drag a rectangle across items (Cmd/Ctrl+click toggles single items).
+3. Optionally set “Start index” (default 1).
+4. For each image, write a caption prompt; toggle status Done/Not done.
+5. Select multiple items by dragging a selection rectangle (Cmd/Ctrl+click toggles individual items).
 6. Use the bottom bar to Bulk Delete or Mark as done.
-7. Use filters/sorting as needed. Check “Export visible only” to export just the current view.
-8. Click “Export”.
-
-### Export behavior
-- Files are written as `<index>.<original_ext>` and `<index>.txt` with the same index.
-- The original image extension is preserved; `.txt` uses UTF‑8.
-- Existing numbered files in the output folder are overwritten.
-- If “Export visible only” is enabled, export order follows the current list order (after filtering/sorting).
+7. Use filters/sorting to focus work (e.g., “without caption”).
+8. If you need to iterate, enable “Export visible only” to export just the current view.
+9. Click “Export”. A modal will confirm how many files were exported and let you open the folder.
 
 ## Roadmap ideas
 - Windows support
