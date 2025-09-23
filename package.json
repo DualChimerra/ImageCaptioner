@@ -1,0 +1,44 @@
+{
+  "name": "image-caption",
+  "version": "1.0.0",
+  "description": "GUI для подписи изображений датасетов (LoRA SDXL)",
+  "main": "main.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "tailwindcss -i src/renderer.css -o styles.css --minify",
+    "start": "npm run build:css && electron .",
+    "dist": "npm run build:css && electron-builder --mac"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "electron": "^31.3.0",
+    "electron-builder": "^24.13.3",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  },
+  "build": {
+    "appId": "com.imagecaption.app",
+    "productName": "Image Captioner",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "renderer.js",
+      "styles.css",
+      "assets/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.photography",
+      "icon": "assets/icon.png",
+      "target": [
+        "dmg"
+      ],
+      "identity": null
+    }
+  }
+}
+
