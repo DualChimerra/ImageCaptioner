@@ -13,6 +13,7 @@ Made by [DualChimerra](https://github.com/DualChimerra).
 - Choose Start Index; numbering is continuous (1..N)
 - RU/EN language switch
 - Modern, minimalist dark UI (Tailwind)
+
 Supported image formats: `png`, `jpg`, `jpeg`, `webp`, `bmp`, `tiff`, `tif`, `heic`, `heif`.
 
 ## Quick start (macOS)
