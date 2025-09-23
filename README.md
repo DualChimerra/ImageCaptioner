@@ -1,6 +1,6 @@
 # Image Captioner (MacOS)
 A minimal, fast GUI to caption dataset images for LoRA/SDXL training. Export renames images to sequential numbers and writes matching `.txt` files with your prompts.
-
+Tested only on `macOS Sequoia 15.5`
 Made by [DualChimerra](https://github.com/DualChimerra).
 
 ## Highlights
@@ -54,11 +54,8 @@ The installer will be created in the `dist/` folder (electron-builder).
 - Windows support
 - Drag & drop import
 - CSV/JSON import/export of captions
-- Keyboard shortcuts (navigation, mark done, export)
 - Autosave session and restore on launch
 - Tag presets and autocomplete for common tokens
-
-Tested only on `macOS Sequoia 15.5`
 
 ## License
 Custom Non-Commercial License (CNCL)
