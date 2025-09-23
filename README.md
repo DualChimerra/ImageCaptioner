@@ -2,7 +2,6 @@
 A minimal, fast GUI to caption dataset images for LoRA/SDXL training. Export renames images to sequential numbers and writes matching `.txt` files with your prompts.
 
 Tested only on `macOS Sequoia 15.5`
-Made by [DualChimerra](https://github.com/DualChimerra).
 
 ## Highlights
 - Load an unlimited number of images
