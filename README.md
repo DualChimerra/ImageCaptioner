@@ -28,9 +28,10 @@ Supported image formats: `png`, `jpg`, `jpeg`, `webp`, `bmp`, `tiff`, `tif`, `he
 Prerequisites: Node.js LTS (18+ recommended). Install from `https://nodejs.org`.
 
 1) Download or clone this repository to any folder on your Mac, for example `~/image-caption`.
-2) Open Terminal and run:
+2) Open Terminal and run in target repository:
 ```bash
-cd ~/image-caption
+git clone https://github.com/DualChimerra/ImageCaptioner.git
+cd ~/ImageCaptioner
 npm install
 npm run start
 ```
