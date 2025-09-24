@@ -19,7 +19,7 @@ Tested only on `macOS Sequoia 15.5`
 - Filters and sorting by caption presence and status
 - “Export visible only” respects current filters/sorting
 - Choose Start Index; numbering is continuous (1..N)
-- Language switch: EN / RU
+- Language switch: EN/RU
 - Minimalist, modern dark UI
 
 > Supported image formats: `png`, `jpg`, `jpeg`, `webp`, `bmp`, `tiff`, `tif`, `heic`, `heif`.
@@ -47,15 +47,16 @@ npm run dist
 
 
 ## Usage
-1. Click “Load images” and choose your dataset images.
-2. Click “Choose folder” and set the output directory.
-3. Optionally set “Start index” (default 1).
-4. For each image, write a caption prompt; toggle status Done/Not done.
+1. Click `Load images` and choose your dataset images.
+2. Click `Choose folder` and set the output directory.
+3. Optionally set `Start index` (default 1).
+4. For each image, write a caption prompt; toggle status `Done/Not done`.
 5. Select multiple items by dragging a selection rectangle (Cmd/Ctrl+click toggles individual items).
-6. Use the bottom bar to Bulk Delete or Mark as done.
+6. Use the bottom bar to Bulk `Delete` or `Mark as done`.
 7. Use filters/sorting to focus work (e.g., “without caption”).
-8. If you need to iterate, enable “Export visible only” to export just the current view.
-9. Click “Export”. A modal will confirm how many files were exported and let you open the folder.
+8. If you need to iterate, enable `Export visible only` to export just the current view.
+9. Click `Export`. A modal will confirm how many files were exported and let you open the folder.
+:dizzy: Excellent!
 
 ## Roadmap ideas
 - Windows support
