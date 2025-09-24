@@ -36,13 +36,12 @@ npm install
 npm run start
 ```
 
-![Screenshot](https://github.com/DualChimerra/ImageCaptioner/blob/main/assets/scr2.png)
-
 #### Building DMG installer:
 ```bash
 npm run dist
 ```
 The installer will be generated in the `dist/` folder (electron‑builder).
+![Screenshot](https://github.com/DualChimerra/ImageCaptioner/blob/main/assets/scr2.png)
 
 
 ## Usage
