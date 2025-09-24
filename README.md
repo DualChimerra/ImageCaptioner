@@ -1,4 +1,4 @@
-![Screenshot](https://github.com/DualChimerra/ImageCaptioner/blob/main/assets/scr.png)
+
 # Image Captioner (MacOS)
 A focused GUI to caption dataset images for LoRA/SDXL training. It streamlines annotation, guarantees consistent file naming, and exports images and captions in the exact format most LoRA pipelines expect: sequentially numbered images plus same‑named `.txt` files with prompts.
 Tested only on `macOS Sequoia 15.5`
@@ -41,7 +41,7 @@ To build a DMG installer:
 npm run dist
 ```
 The installer will be generated in the `dist/` folder (electron‑builder).
-![Screenshot](https://github.com/DualChimerra/ImageCaptioner/blob/main/assets/scr2.png)
+
 
 ## Usage
 1. Click “Load images” and choose your dataset images.
