@@ -26,7 +26,7 @@ Tested only on `macOS Sequoia 15.5`
 
 ## Installation (macOS)
 > [!NOTE]
-> Prerequisites: Node.js LTS (18+ recommended). Install from `https://nodejs.org`.
+> Node.js LTS (18+ recommended). Install from `https://nodejs.org`.
 
 #### Electron-app:
 1) Download or clone this repository to any folder on your Mac, for example `~/image-caption`.
