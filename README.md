@@ -26,8 +26,8 @@ Tested only on `macOS Sequoia 15.5`
 
 ## Installation (macOS)
 > [!NOTE]
-> Prerequisites: Node.js LTS (18+ recommended). 
-> Install from `https://nodejs.org`.
+> Prerequisites: Node.js LTS (18+ recommended). Install from `https://nodejs.org`.
+
 #### Electron-app:
 1) Download or clone this repository to any folder on your Mac, for example `~/image-caption`.
 2) To run Electron app open Terminal and run in target repository:
@@ -56,7 +56,6 @@ npm run dist
 7. Use filters/sorting to focus work (e.g., “without caption”).
 8. If you need to iterate, enable `Export visible only` to export just the current view.
 9. Click `Export`. A modal will confirm how many files were exported and let you open the folder.
-:dizzy: Excellent!
 
 ## Roadmap ideas
 - Windows support
