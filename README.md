@@ -41,6 +41,7 @@ To build a DMG installer:
 npm run dist
 ```
 The installer will be generated in the `dist/` folder (electron‑builder).
+![Screenshot](https://github.com/DualChimerra/ImageCaptioner/blob/main/assets/scr2.png)
 
 ## Usage
 1. Click “Load images” and choose your dataset images.
