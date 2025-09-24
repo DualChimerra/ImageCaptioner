@@ -28,7 +28,7 @@ Tested only on `macOS Sequoia 15.5`
 > [!NOTE]
 > Node.js LTS (18+ recommended). Install from `https://nodejs.org`.
 
-#### Electron-app:
+#### ✦ Electron-app:
 1) Download or clone this repository to any folder on your Mac, for example `~/image-caption`.
 2) To run Electron app open Terminal and run in target repository:
 ```bash
@@ -38,7 +38,7 @@ npm install
 npm run start
 ```
 
-#### Building DMG installer:
+#### ✦ Building DMG installer:
 The installer will be generated in the `dist/` folder (electron‑builder).
 ```bash
 npm run dist
